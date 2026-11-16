@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Starlight Astronomy Club</title>
+</head>
+<body>
+
+  <header>
+    <h1>Starlight Astronomy Club</h1>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contact Us</h2>
+    <p>Fill out the form to reserve a spot or ask a question. Fields marked with * are required.</p>
+
+    <form action="https://httpbin.org/post" method="post">
+
+      <fieldset>
+        <legend>Your Information</legend>
+
+        <p>
+          <label for="fullname">Full name *</label><br>
+          <input type="text" id="fullname" name="fullname" placeholder="Jane Doe" required>
+        </p>
+
+        <p>
+          <label for="email">Email address *</label><br>
+          <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+        </p>
+
+        <p>
+          <label for="visitdate">Preferred date *</label><br>
+          <input type="date" id="visitdate" name="visitdate" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Request</legend>
+
+        <p>
+          <label for="program">Program of interest *</label><br>
+          <select id="program" name="program" required>
+            <option value="">-- Choose a program --</option>
+            <option value="stargazing">Beginner Stargazing</option>
+            <option value="telescope">Telescope Building Workshop</option>
+            <option value="astrophotography">Astrophotography Basics</option>
+            <option value="kids">Kids Space Camp</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="message">Message *</label><br>
+          <textarea id="message" name="message" rows="6" cols="40" placeholder="Tell us how we can help..." required></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <button type="submit">Send Message</button>
+        <button type="reset">Clear Form</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>Created by <strong>Your Name</strong></p>
+    <p>&copy; 2026 Your Name. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
